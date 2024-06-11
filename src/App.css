@@ -10,10 +10,9 @@ html {
 .footer {
   position: fixed;
   width: 100%;
-  background: #333;
+  background: #888;
   color: white;
   padding: 1px;
-  font-size: 14px;
 }
 
 .header {
@@ -24,6 +23,7 @@ html {
 .footer {
   bottom: 0;
   text-align: center;
+  padding: 10px;
 }
 
 .main {
@@ -47,4 +47,8 @@ html {
   .app {
     grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
   }
+}
+
+.footer-text {
+  font-size: medium;
 }

@@ -21,7 +21,9 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <h1>footer section</h1>
+        <h1 className="footer-text">
+          Created By <a href="https://alitarichi.netlify.app/">Ali Tarichi</a>
+        </h1>
       </div>
     </>
   );
