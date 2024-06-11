@@ -5,7 +5,8 @@ function App() {
   return (
     <>
       <div className="header">
-        <h1>Header section</h1>
+        <img className="header-icon" src="/drum.svg" alt="drum" />
+        <h1>Drum Machine</h1>
       </div>
       <div className="main">
         <h1>Try Now!</h1>
