@@ -24,6 +24,12 @@ function App() {
         <h1 className="footer-text">
           Created By <a href="https://alitarichi.netlify.app/">Ali Tarichi</a>
         </h1>
+        <a href="https://github.com/alitarichi">
+          <img src="/github.svg" alt="github" className="footer-image" />
+        </a>
+        <a href="https://www.freecodecamp.org/">
+          <img src="/fcc.svg" alt="freecodecamp" className="footer-image" />
+        </a>
       </div>
     </>
   );
