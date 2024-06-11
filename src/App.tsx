@@ -1,26 +1,23 @@
-import { useState } from "react";
 import "./App.css";
 import SoundButton from "./SoundButton";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="header">
         <h1>Header section</h1>
       </div>
       <div className="main">
-        <h1>Try for yourself!</h1>
+        <h1>Try Now!</h1>
         <div className="app">
-          <SoundButton soundFile="/Cev_H2.mp3" label="Sound 1" />
-          <SoundButton soundFile="/Heater-1.mp3" label="Sound 2" />
-          <SoundButton soundFile="/Heater-2.mp3" label="Sound 3" />
-          <SoundButton soundFile="/Heater-3.mp3" label="Sound 4" />
-          <SoundButton soundFile="/Heater-4_1.mp3" label="Sound 5" />
-          <SoundButton soundFile="/Heater-6.mp3" label="Sound 6" />
-          <SoundButton soundFile="/Kick_n_Hat.mp3" label="Sound 7" />
-          <SoundButton soundFile="/RP4_KICK_1.mp3" label="Sound 8" />
+          <SoundButton soundFile="/Cev_H2.mp3" label="q" triggerKey="q" />
+          <SoundButton soundFile="/Heater-1.mp3" label="w" triggerKey="w" />
+          <SoundButton soundFile="/Heater-2.mp3" label="e" triggerKey="e" />
+          <SoundButton soundFile="/Heater-3.mp3" label="r" triggerKey="r" />
+          <SoundButton soundFile="/Heater-4_1.mp3" label="a" triggerKey="a" />
+          <SoundButton soundFile="/Heater-6.mp3" label="s" triggerKey="s" />
+          <SoundButton soundFile="/Kick_n_Hat.mp3" label="d" triggerKey="d" />
+          <SoundButton soundFile="/RP4_KICK_1.mp3" label="f" triggerKey="f" />
         </div>
       </div>
       <div className="footer">

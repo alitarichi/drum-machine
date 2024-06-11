@@ -1,21 +1,36 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 
 interface SoundButtonProps {
   soundFile: string;
   label: string;
+  triggerKey: string;
 }
 
-const SoundButton: FC<SoundButtonProps> = ({ soundFile, label }) => {
+const SoundButton: FC<SoundButtonProps> = ({
+  soundFile,
+  label,
+  triggerKey,
+}) => {
   const playSound = () => {
     const audio = new Audio(soundFile);
     audio.play();
   };
 
-  return (
-    <button onClick={playSound} style={buttonStyle}>
-      {label}
-    </button>
-  );
+  useEffect(() => {
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.key === triggerKey) {
+        playSound();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [triggerKey, soundFile]);
+
+  return <button style={buttonStyle}>{label}</button>;
 };
 
 const buttonStyle: React.CSSProperties = {
