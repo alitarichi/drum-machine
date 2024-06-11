@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -8,11 +6,15 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="header">
         <h1>Header section</h1>
       </div>
-      <div>main</div>
-      <div>footer</div>
+      <div className="main">
+        <h1>main</h1>
+      </div>
+      <div className="footer">
+        <h1>footer section</h1>
+      </div>
     </>
   );
 }
