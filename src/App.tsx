@@ -11,7 +11,7 @@ function App() {
         <h1>Header section</h1>
       </div>
       <div className="main">
-        <h1>main</h1>
+        <h1>Try for yourself!</h1>
         <div className="app">
           <SoundButton soundFile="/Cev_H2.mp3" label="Sound 1" />
           <SoundButton soundFile="/Heater-1.mp3" label="Sound 2" />

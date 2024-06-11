@@ -24,7 +24,7 @@ const buttonStyle: React.CSSProperties = {
   cursor: "pointer",
   backgroundColor: "#007BFF",
   color: "white",
-  border: "none",
+  border: "2px solid black",
   borderRadius: "5px",
   margin: "5px",
   transition: "background-color 0.3s",
